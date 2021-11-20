@@ -505,6 +505,8 @@ img {
 
 .footer-conteiner {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer .logo {
@@ -585,6 +587,66 @@ img {
 
 .footer .info:hover, .footer .info:focus {
     color: var(--accent-color);
+}
+
+/* footer-form */
+.form-commit-footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-modal-input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 10px;
+}
+
+.footer-modal-label {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bg-nav-color);
+}
+
+.footer-modal-input:hover, .footer-modal-input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.footer-modal-field {
+    margin-right: 10px;
+}
+
+.footer-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 358px;
+    height: 50px;
+    outline: none;
+}
+
+.footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-footer-icon {
+    margin-left: 10px;
+    fill: var(--bg-nav-color);
 }
 
 /* Портфолио */
@@ -693,12 +755,6 @@ img {
     line-height: 1.87;
 }
 
-.footer-input {
-    width: 358px;
-    height: 50px;
-    outline: none;
-}
-
 /* Modal */
 .backdrop {
     width: 100vw;
@@ -728,13 +784,14 @@ img {
     right: 8px;
     width: 30px;
     height: 30px;
+    background-color: var(--bg-nav-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
-    background-color: var(--accent-color);
+.icon-send:hover {
+    fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -773,9 +830,10 @@ img {
     padding-left: 40px;
     outline: none;
     margin-bottom: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus, .modal-text:focus {
+.modal-input:hover, .modal-text:focus {
     border: 1px solid var(--accent-color);
 }
 
@@ -792,6 +850,7 @@ img {
     resize: none;
     padding: 12px 16px;
     outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-send {
@@ -824,7 +883,6 @@ img {
 .modal-button:hover, .modal-button:focus {
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 
 .modal-input-icon {
@@ -867,6 +925,7 @@ img {
 .input-check:checked + .check-text .span-box {
     background-color: var(--accent-color);
 }
-.input-icon-check{
+
+.input-icon-check {
     fill: var(--bg-nav-color);
 }
